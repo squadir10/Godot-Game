@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://chl5f2xc15374"]
+
+[ext_resource type="Texture2D" uid="uid://c6cock1lvahd1" path="res://pig.png" id="1_e8nb2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vf8kx"]
+size = Vector2(20, 15)
+
+[node name="Enemy" type="CharacterBody2D"]
+position = Vector2(3, 0)
+scale = Vector2(2, 2)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(252, 177)
+texture = ExtResource("1_e8nb2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(255, 183.5)
+shape = SubResource("RectangleShape2D_vf8kx")
