@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://d252inaaw1ojj"]
+
+[ext_resource type="Texture2D" uid="uid://cgeoxv08fe037" path="res://Pink Man/Jump (32x32).png" id="1_r1hf7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dbxq8"]
+size = Vector2(21, 29)
+
+[node name="Character" type="CharacterBody2D"]
+scale = Vector2(2, 2)
+
+[node name="Pink_Man" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(25.5, 191.5)
+texture = ExtResource("1_r1hf7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(26, 193)
+shape = SubResource("RectangleShape2D_dbxq8")
